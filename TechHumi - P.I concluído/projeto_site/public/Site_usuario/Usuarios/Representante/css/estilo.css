@@ -1,0 +1,85 @@
+.logo{
+    width: 130px;
+}
+
+#divtemp,
+#divumi{
+    width: 50%;
+}
+
+#temp,
+#umid{
+    width: 50%; 
+    height: 60px;
+  
+}
+
+#tudo{
+    margin:20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+}
+
+@media (max-width: 600px) {
+#tudo{
+    flex-flow: wrap;
+}
+#temp,
+#umid{
+width: 60%; 
+height: 60px;
+}
+#divtemp,
+#divumi{
+    width: 100%;
+}
+}
+
+.consulta-btn {
+    width: 75px;
+ }
+ 
+ #usuario-nome {
+     color: #2079b8;
+ }
+ 
+ .navbar-dark .navbar-nav .nav-link {
+     color: #2079b8 !important;
+ }
+
+
+.esta_table:first-child {
+    margin: 0px 20px;
+}
+
+.esta_table td {
+    border: 0.3px solid #36a2eb;
+    padding: 5px 10px;
+}
+
+.esta_table thead td {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.8em;
+    font-weight: bold;
+text-align: center;
+}
+
+.esta_table tbody td {
+    color: #df3f61;
+    font-weight: bold;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+}
+
+#estatisticas-temp {
+    display: flex;
+    /* justify-content: space-around; */
+    align-content: center;
+    flex-wrap: wrap;
+    flex-flow: row;
+    height: 115px;
+}

@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shotcut icon" href="img/favicon.png"> <!-- LOGO QUE APARECE NA BARRA DO NAVEGADOR -->
+
+    <title>TechHumi</title>
+    <!--  ICONES USADOS NO SITE -->
+    <link href="recursos/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!--  FONTES UTILIZADAS NO SITE VINDA DO GOOGLE FONTS -->
+    <link href='https://fonts.googleapis.com/
+    css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet'
+        type='text/css'>
+    <link
+    
+        href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic'
+        rel='stylesheet' type='text/css'>
+
+         <!-- SCRIPT PARA FAZER O ALERTA NA PARTE DO SIMULADOR FINANCEIRO -->
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+        <link href="recursos/bootstrap/css/bootstrap.min.css" rel="stylesheet"> <!-- CSS DO FRAMEWORK BOOTSTRAP -->
+        <link href="css/creative.css" rel="stylesheet"> <!-- CSS DO TEMA CREATIVE -->
+        <link rel="stylesheet" href="css/estilo.css">
+ </head>
+
+<body id="page-top">
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top"> <img class="ap"
+                        src="img/logo-fundo-transparente.png" height="25"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="#about">Sobre</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#services">A Empresa</a>
+                    </li>
+                    <li>
+                        <a href="#simulador" class="page-scroll">Simulador</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Pré - Cadastro</a>
+                    </li>
+                    <li>
+                        <a href="./Site_usuario/Login/login.html">Login</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <header>
+        <div class="header-content">
+            <div class="header-content-inner">
+                <img class="logomain" src="img/logo-fundo-transparente.png">
+                <hr>
+                <h2>Produtividade é nossa cara</h2>
+            </div>
+        </div>
+    </header>
+
+    <section class="bg-primary" id="about">
+
+        <div class="container" style="width: 50%">
+            <div class="row justify-content-lg-center">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading text-white">Sobre Nós</h2>
+                    <hr class="light">
+                    <p class="text-faded">A empresa TechHumi é um projeto criado visando melhorar a qualidade de ambiente de trabalho de todos os nossos clientes.
+                        Assim, aumentando a produtividade das empresas e os relacionamentos interpessoais.
+                    </p>
+                    <a class="btn btn-default btn-xl js-scroll-trigger" href="#services">Conheça mais!</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <h1  class="text-center ">Um pouco mais</h1>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-diamond text-primary sr-icons"></i>
+                        <h3>A TechHumi</h3>
+                        <p class="text-muted">Criada por 6 jovens empreendedores formados na renomada Faculdade De
+                            Tecnologia Bandtec </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-paper-plane text-primary sr-icons"></i>
+                        <h3>Missão</h3>
+                        <p class="text-muted">Colaborar com a melhoria da qualidade de vida dos usuários.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-newspaper-o text-primary sr-icons"></i>
+                        <h3>Visão</h3>
+                        <p class="text-muted">Ser a única empresa brasileiro de todo o mercado por priorizar o bem estar
+                            no ambiente de trabalho de nossos clientes.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-heart text-primary sr-icons"></i>
+                        <h3>Valores</h3>
+                        <p class="text-muted">Satisfação do cliente<br>
+                            Valorização e respeito às pessoas</p>
+                    </div>
+                </div>
+            </div>
+    </section>
+    
+        <section id="simulador" class="container-fluid">
+        <div class="container" id="formulario"> 
+        <h1 id="titulo1">Simulador Financeiro</h1>
+        <form>
+            <div class="form-group">
+                <label>Quantos escritórios sua empresa possui?</label>
+                <input type="number" placeholder="0" id="escritorio" class="form-control w-2 responsivo-tech">
+            </div>
+            <div class="form-group">
+
+                <label>Qual a média de metragem dos escritorios?</label>
+                <input type="number" placeholder="0" id="media" class="form-control w-2 responsivo-tech">
+            </div>
+
+            <div class="form-group">
+                <label>Sua empresa possui ar condicionado?</label>
+                <select id="ar" class="form-control w-2 responsivo-tech">
+                    <option value="sim">Sim</option>
+                    <option value="nao">Não</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Sua empresa possui umidificador?</label>
+                <select id="umid" class="form-control w-2 responsivo-tech">
+                    <option value="sim">Sim</option>
+                    <option value="nao">Não</option>
+                </select>
+            </div>
+
+            <div class="form-group" id="botao">
+                <button type="button" onclick="calcular()" class="btn btn-outline-dark">Calcular</button>
+            </div>
+        </form>
+
+            </div>
+    </section>
+
+    </section>
+
+
+    <section id="contact">
+        <div class="container">
+            <div class="column">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2 class="section-heading">Pré-Cadastro</h2>
+                    <hr class="primary">
+                    <p>
+                    Tem interesse em nosso produto? Preencha o formulário abaixo!</p>
+                </div>
+                <div class="col-lg-4 col-lg-offset-2 ">
+                    <form id="contatoEmp" onsubmit="return contatoEmpresa()">
+
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Nome da Empresa</label>
+                            <input name="nomeEmp" type="text" class="form-control" id="empresa" placeholder="Insira o nome da Empresa">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Nome do Representante</label>
+                            <input name="nomeRep" type="text" class="form-control" id="representante" placeholder="Insira o nome do Representante">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">CNPJ</label>
+                            <input name="cnpjEmp" type="text" class="form-control" id="cnpj" placeholder="Insira seu CNPJ">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Telefone</label>
+
+                            <div class="form-row">
+                                <div class="col-lg-4">
+                                    <select name="dd" class="form-control form-control-sm" id="ddd">
+                                        <option>DDD</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                        <option value="13">13</option>
+                                        <option value="14">14</option>
+                                        <option value="15">15</option>
+                                        <option value="16">16</option>
+                                        <option value="17">17</option>
+                                        <option value="18">18</option>
+                                        <option value="19">19</option>
+                                        <option value="21">21</option>
+                                        <option value="22">22</option>
+                                        <option value="24">24</option>
+                                    </select>
+                                </div>
+
+
+                                <div class="col-lg-8">
+                                    <input name="telEmp" type="text" class="form-control" id="telefone"
+                                        placeholder="Insira seu Telefone">
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <br><br>
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Escreva sua mensagem.</label>
+                            <textarea name="msg" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+
+                        <button type="button" class="btn btn-info" onclick="preCadastrar()">Enviar</button>
+                    </form>
+                </div>
+                <!-- <div class="col-lg-4">
+                    <i class="fa fa-phone fa-3x sr-contact"></i>
+                    <p>+55(11)0000-0000</p>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- RODAPÉ DO SITE -->
+    <footer class=" footer-basic-centered">
+        <div class="row ">
+            <div class="col-lg-5" >
+                <img src="img/logo-fundo-transparente.png" height="50">
+
+                <p class="footer-company-name">TechHumi &copy; 2019</p>
+            </div>
+            <div class="col-lg-5 ">
+                <ul class="list-group">
+                    <li>+55(11)0000-0000</li>
+                    <li><a href="mailto:contato@techhumi.com.br">contato@techhumi.com.br</a></li>
+                </ul>
+                <a href="http://api.whatsapp.com/send?1=pt_BR&phone=5500000000000" target="blank" class="fixed"><img src="img/whatsapp.png"></a>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- SCRIPT USADOS NO SITE -->
+    <script src="recursos/jquery/jquery.min.js"></script>
+    <script src="recursos/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/creative.min.js"></script>
+</body>
+
+</html>
+<script>
+    function preCadastrar(){
+        if (empresa.value != '' && representante.value != '' && cnpj.value != '' && ddd.value != 'DDD' && telefone.value != ''){
+            contatoEmpresa() 
+        }
+        else{
+            swal({
+                title: `Por Favor, Preencha Todos os Campos Corretamente!`
+            });
+        }
+       
+    }
+
+function calcular() {
+        var media_metro = (Number(media.value) / Number(escritorio.value));
+        var ar_condicionado;
+        var sem;
+        var com;
+        var total;
+
+        if (media_metro >= 50) {
+            ar_condicionado = 2;
+        } else if (media_metro >= 80) {
+            ar_condicionado = 3;
+        }
+        else {
+            ar_condicionado = 1;
+        }
+
+        if (ar.value == 'nao' && umid.value == 'nao') {
+            //TUDO EM REAL - vALORES DE CADA ITEM 100= ar condicionado; 70= umidificador; mao de obra do ar = 100
+            // mao de obra do sistema = 300 ; sistema = 100;
+            sem = ((100 * ar_condicionado) + (70 * ar_condicionado) + 100 + 400) * Number(escritorio.value);
+            total = new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(sem);
+        }
+        else if (ar.value == 'sim' && umid.value == 'nao') {
+            sem = ((100) + (70 * ar_condicionado) + 100 + 400) * Number(escritorio.value);
+            total = new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(sem);
+        }
+        else if (ar.value == 'nao' && umid.value == 'sim') {
+            sem = ((100 * ar_condicionado) + (70) + 100 + 400) * Number(escritorio.value);
+            total = new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(sem);
+        }
+        else {
+            com = (300 + 100) * Number(escritorio.value);
+            total = new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(com);
+        }
+
+        swal({
+                title: `Com o nosso sistema instalado, você gastará apenas ${total} por ano.`
+            });
+
+
+    }
+
+    
+    function contatoEmpresa(){
+        var formulario = new URLSearchParams(new FormData(contatoEmp));
+        fetch("/email/emailEmp", {
+            method: "POST",
+            body: formulario
+        }).then(function (response) {
+            
+            if (response.ok) {
+                swal({
+                title: `Obrigado pelo Interrese, Aguarde Nosso Retorno!`,
+                timer:100
+            });
+             consultarEmail();
+            } else {
+
+                console.log('Erro de login!');
+                swal({
+            icon :"error",
+            title:`Houve um problema de conexão`
+        });
+            }
+        });
+        return false;
+    }
+
+    </script>
